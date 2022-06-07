@@ -7,7 +7,7 @@ rivers = {
 for key, value in rivers.items():
 	print(f"The {key.title()} runs through {value.title()}.")
 
-for key in rivers.keys():
+for key in rivers:
 	print(key.title())
 
 for value in rivers.values():

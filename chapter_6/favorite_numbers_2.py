@@ -1,12 +1,15 @@
 fav_numbers = {
-	'Ja': 3,
-    'Aneta': 7,
-    'Dorota': 9,
-    'Pawel': 13,
-    'Damian': 8}
+	'Bartek': [3, 33],
+    'Aneta': [7, 17, 2],
+    'Dorota': [9, 32, 11, 5],
+    'Pawel': [13],
+    'Damian': [8, 1]
+    }
 
-print(f"My favorite number is {fav_numbers.get('Ja')}")
-print(f"Aneta favorite number is {fav_numbers.get('Aneta')}")
-print(f"Dorota favorite number is {fav_numbers.get('Dorota')}")
-print(f"Pawel favorite number is {fav_numbers.get('Pawel')}")
-print(f"Damian favorite number is {fav_numbers.get('Damian')}")
+for name, numbers in fav_numbers.items():
+    if len(numbers) == 1:
+        print(f"\n{name} favorite number is:")
+    else:
+        print(f"\n{name} favorite numbers are:")
+    for  number in numbers:
+        print(number)
