@@ -1,10 +1,15 @@
-cities = {
-    'Krakow': {'country': 'Poland', 'population': '766k', 'fact': 'There are many monuments'},
-    'Paris': {'country': 'France', 'population': '2161k', 'fact': 'PPl there dont care about their bumpers'},
-    'Stockholm': {'country': 'Sweden', 'population': '975k', 'fact': 'There are many bridges'}
-}
+fav_numbers = {
+	'Bartek': [3, 33],
+    'Aneta': [7, 17, 2],
+    'Dorota': [9, 32, 11, 5],
+    'Pawel': [13],
+    'Damian': [8, 1]
+    }
 
-for city, keys in cities.items():
-    print(f"\nCity name: {city}")
-    for key, answer in keys.items():
-        print(f"\t{key}: {answer}")
+for name, numbers in fav_numbers.items():
+    if len(numbers) == 1:
+        print(f"\n{name} favorite number is:")
+    else:
+        print(f"\n{name} favorite numbers are:")
+    for  number in numbers:
+        print(number)
